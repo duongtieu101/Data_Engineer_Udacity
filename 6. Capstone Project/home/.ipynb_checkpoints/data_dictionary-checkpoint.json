@@ -1,0 +1,177 @@
+{
+  "tables": [
+    {
+      "table": "fact_immigration",
+      "table_description":
+        "Fact table. This data has been extracted from original I94 Immigrations data to bring together I94 Immigrations data.",
+      "fields": [
+        {
+          "field_name": "immigration_id",
+          "field_description":
+            "Immigration Identity"
+        },
+        {
+          "field_name": "cic_id",
+          "field_description":
+            "CIC ID"
+        },
+        {
+          "field_name": "arrival_year",
+          "field_description": 
+            "Arrival year."
+        },
+        {
+          "field_name": "arrival_month",
+          "field_description":
+            "Arrival month"
+        },
+        {
+          "field_name": "city_code",
+          "field_description":
+            "Three characters abbreviation for USA city"
+        },
+        {
+          "field_name": "state_code",
+          "field_description":
+            "Two characters abbreviation for USA state"
+        },
+        {
+          "field_name": "arrival_date",
+          "field_description":
+            "Arrival date"
+        },
+        {
+          "field_name": "departure_date",
+          "field_description":
+            "Departure date"
+        },
+        {
+          "field_name": "mode",
+          "field_description":
+            "Traffic method"
+        },
+        {
+          "field_name": "visa",
+          "field_description":
+            "Visa type"
+        },
+        {
+          "field_name": "country",
+          "field_description":
+            "United States"
+        }
+      ]
+    },
+    {
+      "table": "dim_time",
+      "table_description":
+        "This table conntains information about time dimension table",
+      "fields": [
+        {
+          "field_name": "date",
+          "field_description":
+            "Date"
+        },
+        {
+          "field_name": "day",
+          "field_description": 
+            "Day (of the month) of immigration."
+        },
+        {
+          "field_name": "week",
+          "field_description":
+            "Week (of the year) of immigration"
+        },
+        {
+          "field_name": "month",
+          "field_description":
+            "Month (of the year) of immigration"
+        },
+        {
+          "field_name": "year",
+          "field_description":
+            "Year of immigration"
+        },
+        {
+          "field_name": "weekday",
+          "field_description":
+            "Day (of the week) of immigration"
+        }
+      ]
+    },
+    {
+      "table": "dim_personal_information",
+      "table_description":
+        "This table conntains personal information of customers",
+      "fields": [
+        {
+          "field_name": "immi_personal_id",
+          "field_description":
+            "Identity/Primary key"
+        },
+        {
+          "field_name": "cic_id",
+          "field_description":
+            "CIC ID"
+        },
+        {
+          "field_name": "citizen_country",
+          "field_description": 
+            "Country of citizenship."
+        },
+        {
+          "field_name": "residence_country",
+          "field_description":
+            "Country of residence"
+        },
+        {
+          "field_name": "birth_year",
+          "field_description":
+            "Birth year"
+        },
+        {
+          "field_name": "gender",
+          "field_description":
+            "Gender"
+        }
+      ]
+    },
+    {
+      "table": "dim_state",
+      "table_description":
+        "This table contains all information about state of USA",
+      "fields": [
+        {
+          "field_name": "state_code",
+          "field_description":
+            "Two characters abbreviation for USA state"
+        },
+        {
+          "field_name": "state_name",
+          "field_description":
+            "Name of USA state"
+        },
+        {
+          "field_name": "median_age",
+          "field_description": 
+            "Median age of state."
+        },
+        {
+          "field_name": "male_population",
+          "field_description":
+            "State male population"
+        },
+        {
+          "field_name": "female_population",
+          "field_description":
+            "State female population"
+        },
+        {
+          "field_name": "total_population",
+          "field_description":
+            "State total population"
+        }
+      ]
+    }
+  ]
+}
