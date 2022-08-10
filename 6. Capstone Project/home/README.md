@@ -47,7 +47,7 @@ The output data (data lake) will be saved on AWS S3 as parquet format.
 ### Conceptual Data Model
 - Star Schema:
 Please refer to images/star_schema_model.PNG file if some issues occur.
-![This is a alt text.](https://github.com/duongtieu101/Data_Engineer/blob/main/6.%20Capstone%20Project/home/images/star_schema_model.PNG "This is a star schema model image.")
+![This is a alt text.](https://github.com/duongtieu101/Data_Engineer_Udacity/blob/main/6.%20Capstone%20Project/home/images/star_schema_model.PNG "This is a star schema model image.")
 We use star schema for this project because when we want to query to create a report, this schema allows for the relaxation of these rules and makes queries easier with simple JOINS, and aggregations perform calculations and clustering of our data. Examples : COUNT, SUM, GROUP BY etc
 ## Step 4: Run Pipelines to Model the Data
 ### Data Pipeline Build Up Steps
